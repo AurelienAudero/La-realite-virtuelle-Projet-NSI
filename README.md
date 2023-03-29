@@ -1,3 +1,3 @@
 # La réalité virtuelle - Projet NSI
-Ceci est un site fait dans le cadre d'un projet de la spécialité NSI en première générale.<br>
-Il présente le sujet "La réalité virtuelle : un nouveau monde ?".
+Un site web one-page présentant la réalité virtuelle à travers un design épuré.<br>
+Fait dans le cadre d'un projet pour la spécialité NSI en première générale.

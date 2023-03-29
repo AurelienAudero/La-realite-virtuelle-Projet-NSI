@@ -1,5 +1,5 @@
-body {
-    font-family: 'Nunito', sans-serif;
+  body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
   }
   
@@ -60,19 +60,30 @@ body {
     text-decoration: none;
     color: #444;
     font-weight: 500;
-    transition: color 0.3s ease-in-out;
+
+    /* Initialisation de l'animation underline on hover */
+    display: inline-block;
+    padding-bottom: 5px;
+    background-image: linear-gradient(#418AF7 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s;
   }
   
   .menu-items a:hover {
-    color: #e20058;
-    transition: color 0.3s ease-in-out;
+    background-position: 100% 100%;
+    background-size: 100% 2px;
   }
   
   .logo {
     order: 1;
-    width: 70px;
+    width: 50px;
     margin-bottom: 0.5rem;
-    margin-left: -70%;
+    left: 25px;
+    position: absolute;
   }
   
   /*----------------------------------------------*/
@@ -138,10 +149,6 @@ body {
       transition: transform 0.4s ease-in-out;
     }
   
-    .menu-items a:hover {
-      color: #7F7FD5;
-    }
-  
     .navbar .menu-items {
       padding-top: 100px;
       background: #fff;
@@ -166,6 +173,7 @@ body {
       position: absolute;
       top: 5px;
       right: 15px;
+      left: auto;
       font-size: 2rem;
     }
   
@@ -190,20 +198,92 @@ body {
   /*                    Footer                    */
   /*----------------------------------------------*/
   #footer {
-    background: linear-gradient(to left,#7F7FD5, #86A8E7, #91EAE4);
+    background: linear-gradient(to left,#7b01f7, #e30058);
     bottom: 0;
     width: 100%;
-    color: #444;
+    color: white;
     text-align: right;
-    height: 50px;
   }
   
-  footer p {
-    margin-top: 15px;
-    margin-right: 25px;
+  div.footer-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    display: flex;
+  }
+
+  div.right, .left {
+    flex: 1;
+  }
+
+  div.left {
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+  }
+
+  a p {
+    color: #a7a6a7;
+  }
+
+  .instagram-name {
+    width: 175px;
+    line-height: 40px
+  }
+
+  .instagram-logo {
+    width: 40px;
+    float: left;
+  }
+
+  .github-name {
+    width: 90px;
+    line-height: 25px
+  }
+
+  .github-logo {
+    width: 25px;
+    float: left;
+  }
+
+  .license-link {
+    color: #a7a6a7;
+  }
+
+  /*----------------------------------------------*/
+  /*                 Bouton animé                 */
+  /*----------------------------------------------*/
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    display: block;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
   
+  .btn-white {
+    margin-top: 10px;
+    background-color: #fff;
+    color: #777;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
   /*----------------------------------------------*/
   /*             Mise en page générale            */
   /*----------------------------------------------*/
@@ -213,51 +293,28 @@ body {
     margin-top: 80px;
     margin-bottom: 80px;
   }
-  
-  section hr {
-    border: 1px solid grey;
-  }
-  
-  section :not(hr) {
-    margin-left: 2%;
-  }
-  
-  section article p {
-    padding-left: 25px;
-  }
-  
-  section article div {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-  }
-  
-  section article div.left, div.right {
-    width: 45%;
-  }
-  
-  @media screen and (max-width: 979px) {
-    section article div {
-      display: block;
-    }
-    section article div.left, div.right {
-      width: 90%;
-    }
-  }
-  
-  section article hr {
-    margin-top: 25px;
-    margin-bottom: 25px;
+
+  #home img {
+    width: 50%;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
-  section#home article div.first div.left img {
-    width: 500px;
+  #home h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    margin-top: -15%;
   }
 
-  section#home div.right h1 {
-    font-size: 56px;
+  #home button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    border: none;
+    padding: 20px;
+    text-align: center;
   }
 
-  section#home div.right {
-    padding-top: 115px;
-  }
+  

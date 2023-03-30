@@ -1,6 +1,7 @@
   body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    overflow-x: hidden;
   }
   
   /*----------------------------------------------*/
@@ -203,6 +204,7 @@
     width: 100%;
     color: white;
     text-align: right;
+    margin-top: 80px;
   }
   
   div.footer-container {
@@ -222,10 +224,30 @@
     text-align: left;
   }
 
-  a {
+  footer a {
     text-decoration: none;
     color: white;
     display: inline-block;
+
+    /* Initialisation de l'animation underline on hover */
+    display: inline-block;
+    padding-bottom: 5px;
+    background-image: linear-gradient(#a7a6a7 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s;
+  }
+  
+  footer a:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+  }
+
+  .instagram-link {
+    padding-bottom: 0px;
   }
 
   a p {
@@ -288,15 +310,14 @@
   /*             Mise en page générale            */
   /*----------------------------------------------*/
   section {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
   }
 
   #home img {
     width: 50%;
-    min-width: 400px;
+    min-width: 300px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -316,5 +337,4 @@
     padding: 20px;
     text-align: center;
   }
-
   

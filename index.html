@@ -49,12 +49,12 @@
             Animi cumque id commodi modi hic quasi ist e odit nihil iusto vero nostrum, molestiae asperiores veritatis, exercitationem porro? Pariatur sit magni quibusdam ab similique in corrupti blanditiis facere omnis commodi.
             Vel deleniti quidem at autem voluptatum laudantium qui ea voluptatem libero doloribus mollitia veniam dolore, enim, eaque totam quis, tempora officia iste voluptates beatae! Iure voluptate reprehenderit molestiae et totam!
             Porro ab ipsam ea id consequuntur quis expedita sint corporis, minima commodi omnis natus in sapiente adipisci facilis hic aliquam incidunt. Officia dolores error dolor soluta provident optio voluptate aspernatur?
-            Accusamus tenetur laudantium, voluptatem voluptate aut maxime perspiciatis, facilis est ex corrupti possimus totam, architecto repellat quibusdam iusto sequi accusantium eligendi ab asperiores recusandae similique ipsum? Veritatis fugiat quaerat delectus.
-            Maiores saepe repudiandae quasi quod provident magnam. Facilis consequuntur, esse iure veniam perferendis temporibus ab, consectetur quas unde molestias nesciunt! Non amet mollitia assumenda voluptates voluptatem! Excepturi cumque ipsum numquam.
+            Accusamus tenetur laudantium, voluptatem voluptate aut maxime perspiciatis, facilis est ex corrupti possindis temporibus ab, consectetur quas unde molestias nesciunt! Non amet mollitia assumenda voluptates voluptatem! Excepturi cumque ipsum numquam.
             Explicabo eos commodi deserunt veniam aliquam nihil, eaque quae beatae inventore quos ex velit neque labore quibusdam ratione rem dignissimos! Modi officia ex esse nulla voluptatem vitae aliquam, nisi distinctio.
-            Hic placeat veniam magni optio repellat nemo iusto, praesentium quibusdam est, possimus necessitatibus minima vero id excepturi laudantium eaque doloremque. Tempora atque nulla repellat libero exercitationem autem quibusdam, doloribus laudantium!
+            Hic placeat veniam magni optio repellat nemo iusto, praesentium quibusdam estumus totam, architecto repellat quibusdam iusto sequi accusantium eligendi ab asperiores recusandae similique ipsum? Veritatis fugiat quaerat delectus.
+            Maiores saepe repudiandae quasi quod provident magnam. Facilis consequuntur, esse iure veniam perferes minima vero id excepturi laudantium eaque doloremque. Tempora atque nulla repellat libero exercitationem autem quibusdam, doloribus laudantium!
             Hic tempore, corporis aliquid ex id veritatis quod ratione itaque? Debitis, et praesentium! Est consequatur, natus ea sint quos dolorum iusto reprehenderit deserunt corrupti velit rem voluptatum doloribus odit assumenda!
-            Consectetur deleniti laboriosam animi est eaque voluptatum officiis delectus voluptas repellendus? Obcaecati quisquam nulla aliquid a qui porro, dignissimos expedita earum ea veritatis est possimus. Eius quos quisquam architecto delectus.
+            Consectetur deleniti laboriosam animi est , possimus necessitatibeaque voluptatum officiis delectus voluptas repellendus? Obcaecati quisquam nulla aliquid a qui porro, dignissimos expedita earum ea veritatis est possimus. Eius quos quisquam architecto delectus.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet dolorem obcaecati dolore aspernatur, ab quis exercitationem asperiores accusamus totam cum explicabo dignissimos vel quia odit similique ea quo pariatur!
             Magnam unde repudiandae a, quas harum in cum quae et voluptatem delectus. Voluptatum quis ipsam, consequatur accusantium natus aperiam, quaerat laudantium nihil, ipsa similique dolorum quo aliquid! Culpa, aliquid expedita?
             Modi, ex? Tempore qui commodi nam! Sint eum eveniet deleniti reprehenderit magnam, voluptas, labore inventore sunt pariatur doloribus natus laudantium, error qui minus suscipit debitis. Odit eius maiores aspernatur at.
@@ -66,10 +66,24 @@
 
     <section id="feedback">
         <h1>Donnez votre avis</h1>
-        
-        <!-- Supprimer le contenu suivant après ajout du formulaire -->
-        <p style="text-align: center;">Ici prochainement, un formulaire d'avis</p>
-        <!-- Fin du contenu à supprimer -->
+        <form id="feedback-form">
+            <label for="firstname">Prénom :</label>
+            <input type="text" name="data[firstname]" id="firstname" maxlength="30" required>
+            <br>
+
+            <label for="lastname">Nom de famille :</label>
+            <input type="text" name="data[lastname]" id="lastname" maxlength="30" required>
+            <br>
+
+            <select class="star-rating">
+                <option value="">Choissisez une not</option>
+                <option value="5">Excellent</option>
+                <option value="4">Très bien</option>
+                <option value="3">Moyen</option>
+                <option value="2">Mauvais</option>
+                <option value="1">Terrible</option>
+            </select>
+        </form>
     </section>
 
     <footer id="footer">
@@ -93,7 +107,7 @@
                 <br><br><br>
                 <a class="license-link" href="https://github.com/AurelienAudero/La-realite-virtuelle-Projet-NSI/blob/main/LICENSE" target="_blank">License</a>
                 -
-                <a class="license-link" href="/bibliographie.html">Bibliographie</a>
+                <a class="license-link" href="/bibliographie.html" target="_blank">Bibliographie</a>
                 
                 <p>&copy; Aurélien Audero & Tony Baca - 2023</p>
             </div>

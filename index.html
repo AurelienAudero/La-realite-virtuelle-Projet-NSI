@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Sélection du titre, du charset et du viewport -->
+    <!-- Meilleure compatibilité avec Internet Explorer -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="shortcut icon" href="/images/VR_Logo.webp" type="image/x-icon">
     <title>La réalité virtuelle</title>
 
-    <!-- Importation de fonts -->
+    <!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- Lien vers les favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- Sélection de la couleur et du titre pour Android -->
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Sélection de la couleur de la tuile pour Windows -->
+    <meta name="msapplication-TileColor" content="#00aba9">
+
+    <!-- Importation des fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar -->
     <header>
         <nav class="navbar">
             <div class="navbar-container container">
@@ -33,6 +49,7 @@
         </nav>
     </header>
 
+    <!-- Image et titre du haut de page-->
     <section id="home">
         <img src="/images/MetaQuest2-and-Title.webp" alt="Image d'un casque de réalité virtuelle Meta Quest 2 avec le titre 'LA RÉALITÉ VIRTUELLE' superposé sur le bas de l'image">
         <a href="#introduction" class="btn btn-white btn-animate">Découvrir</a>
@@ -64,22 +81,26 @@
         </p>
     </section>
 
+    <!-- Formulaire d'avis sur le site-->
     <section id="feedback">
         <h1>Donnez votre avis</h1><br>
         <form id="feedback-form">
+            
+            <!-- Entrée du prénom -->
             <label for="firstname">Prénom :</label>
             <br class="form-labels-on-mobile">
             <input type="text" name="data[firstname]" id="firstname" maxlength="30" required>
             <br>
 
+            <!-- Entrée du nom de famille -->
             <label for="lastname">Nom de famille :</label>
             <br class="form-labels-on-mobile">
             <input type="text" name="data[lastname]" id="lastname" maxlength="30" required>
             <br><br>
 
+            <!-- Séléction d'une note par le biais d'étoiles-->
             <label>Choissisez une note :</label>
             <br>
-
             <div class="star-rating">
                 <label>
                     <input type="radio" name="data[grade]" value="1" required/>
@@ -114,6 +135,7 @@
             </div>
             <br><br>
 
+            <!-- Bouton et conditions pour envoyer le formulaire -->
             <input type="submit" value="Envoyer">
             <p class="form-submit-terms">
                 En cliquant sur "Envoyer", vous consentez au traitement de vos données conformément à la RGPD.<br>
@@ -121,20 +143,25 @@
             </p>
         </form>
         
+        <!-- Message s'affichant une fois que le formulaire à bien été envoyé -->
         <div id="form-submit-success">
             <h2>Merci !</h2>
             <p>Votre avis à bien été envoyé</p>
         </div>
     </section>
 
+    <!-- Flèche permettant de revenir en haut de la page -->
     <div id="home-up-arrow">
         <a href="#home">
             <img src="/images/UpArrow.webp" alt="Flèche qui pointe vers le haut permettant de revenir tout en haut de la page">
         </a>
     </div>
 
+    <!-- Footer -->
     <footer id="footer">
         <div class="footer-container">
+            
+            <!-- Contenu à gauche -->
             <div class="left">
                 <div class="site-creators">
                     <h4>Créateurs</h4>
@@ -147,6 +174,8 @@
                     </a>
                 </div>
             </div>
+
+            <!-- Contenu à droite -->
             <div class="right">
                 <a href="https://github.com/AurelienAudero/La-realite-virtuelle-Projet-NSI/" target="_blank">
                     <img class="github-logo" src="/images/GitHub-Logo.webp" alt="Petit logo GitHub"><p class="github-name">GitHub</p>

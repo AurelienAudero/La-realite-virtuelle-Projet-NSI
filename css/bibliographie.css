@@ -201,6 +201,7 @@ body {
   #footer {
     background: linear-gradient(to left,#7b01f7, #e30058);
     bottom: 0;
+    position: absolute;
     width: 100%;
     color: white;
     text-align: right;

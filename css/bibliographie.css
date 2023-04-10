@@ -200,12 +200,10 @@ body {
   /*----------------------------------------------*/
   #footer {
     background: linear-gradient(to left,#7b01f7, #e30058);
-    bottom: 0;
-    position: absolute;
     width: 100%;
     color: white;
     text-align: right;
-    margin-top: 80px;
+    margin-top: 18.5%;
   }
   
   div.footer-container {
@@ -280,7 +278,7 @@ body {
   }
 
   /*----------------------------------------------*/
-  /*             Mise en page générale            */
+  /*       Mise en page de la bibliographie       */
   /*----------------------------------------------*/
   div.page-content {
     padding-top: 75px;
@@ -292,6 +290,26 @@ body {
   div.page-content div.left, div.page-content div.right {
     flex: 1;
     padding: 25px;
+    width: 50%;
+    display: inline-block;
+  }
+
+  div.page-content hr {
+    margin-top: 40px;
+    margin-bottom: -50px;
+    display: none;
+  }
+
+  @media screen and (max-width: 979px) {
+    div.page-content {
+      display: block;
+    }
+    div.page-content div.left, div.page-content div.right {
+      width: 100%;
+    }
+    div.page-content hr {
+      display: block;
+    }
   }
 
   div.page-content div.left img {

@@ -65,7 +65,7 @@
     </section>
 
     <section id="feedback">
-        <h1>Donnez votre avis</h1>
+        <h1>Donnez votre avis</h1><br>
         <form id="feedback-form">
             <label for="firstname">Prénom :</label>
             <input type="text" name="data[firstname]" id="firstname" maxlength="30" required>
@@ -73,17 +73,56 @@
 
             <label for="lastname">Nom de famille :</label>
             <input type="text" name="data[lastname]" id="lastname" maxlength="30" required>
+            <br><br>
+
+            <label>Choissisez une note :</label>
             <br>
 
-            <select class="star-rating">
-                <option value="">Choissisez une not</option>
-                <option value="5">Excellent</option>
-                <option value="4">Très bien</option>
-                <option value="3">Moyen</option>
-                <option value="2">Mauvais</option>
-                <option value="1">Terrible</option>
-            </select>
+            <div class="star-rating">
+                <label>
+                    <input type="radio" name="data[grade]" value="1" required/>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="data[grade]" value="2" required/>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="data[grade]" value="3" required/>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                </label>
+                <label>
+                    <input type="radio" name="data[grade]" value="4" required/>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="data[grade]" value="5" required/>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+            </div>
+            <br><br>
+
+            <input type="submit" value="Envoyer">
+            <p class="form-submit-terms">
+                En cliquant sur "Envoyer", vous consentez au traitement de vos données conformément à la RGPD.<br>
+                Si vous avez moins de 15 ans, l'enfant ainsi que son tuteur doivent consentir au traitement des données.
+            </p>
         </form>
+        
+        <div id="form-submit-success">
+            <h2>Merci !</h2>
+            <p>Votre avis à bien été envoyé</p>
+        </div>
     </section>
 
     <footer id="footer">
@@ -113,7 +152,10 @@
             </div>
         </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Importation de jQuery -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Importation de Axios -->
     <script src="/javascript/smooth-scrolling.js"></script>
+    <script src="/javascript/formSubmit.js"></script>
 </body>
 </html>

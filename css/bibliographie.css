@@ -1,0 +1,330 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  /*----------------------------------------------*/
+  /*      Correction d'un bug avec la navbar      */
+  /*----------------------------------------------*/
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /*----------------------------------------------*/
+  /*                    Navbar                    */
+  /*                  Version PC                  */
+  /*----------------------------------------------*/
+  .navbar input[type="checkbox"],
+  .navbar .hamburger-menu {
+    display: none;
+  }
+  
+  .navbar {
+    box-shadow: 0px 1px 0px 0px #aaa;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    color: #000;
+    height: 50px;
+    opacity: 0.95;
+    z-index: 12;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+  }
+  
+  .menu-items {
+    order: 2;
+    display: flex;
+    padding-right: 2%;
+  }
+  
+  .menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+
+    /* Initialisation de l'animation underline on hover */
+    display: inline-block;
+    padding-bottom: 5px;
+    background-image: linear-gradient(#418AF7 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s;
+  }
+  
+  .menu-items a:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+  }
+  
+  .logo {
+    order: 1;
+    width: 50px;
+    margin-bottom: 0.5rem;
+    left: 25px;
+    position: absolute;
+  }
+  
+  /*----------------------------------------------*/
+  /*                    Navbar                    */
+  /*                Version Mobile                */
+  /*----------------------------------------------*/
+  @media screen and (max-width: 768px) {  
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+      display: block;
+    }
+  
+    .navbar-container {
+      display: block;
+      position: relative;
+      height: 64px;
+    }
+  
+    .navbar-container input[type="checkbox"] {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 30px;
+      top: 20px;
+      left: 20px;
+      z-index: 5;
+      opacity: 0;
+    }
+  
+    .navbar-container .hamburger-lines {
+      display: block;
+      height: 23px;
+      width: 35px;
+      position: relative;
+      margin-bottom: 27px;
+      top: 15px;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .navbar-container .hamburger-lines .line {
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: #333;
+    }
+  
+    .navbar-container .hamburger-lines .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar .menu-items {
+      padding-top: 100px;
+      background: #fff;
+      height: 100vh;
+      max-width: 300px;
+      transform: translate(-150%);
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+      padding-left: 50px;
+      transition: transform 0.5s ease-in-out;
+      box-shadow: 5px 0px 10px 0px #aaa;
+    }
+  
+    .navbar .menu-items li {
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+  
+    .logo {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      left: auto;
+      font-size: 2rem;
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+      transform: translateX(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(35deg);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-35deg);
+    }
+  }
+  
+  /*----------------------------------------------*/
+  /*                    Footer                    */
+  /*----------------------------------------------*/
+  #footer {
+    background: linear-gradient(to left,#7b01f7, #e30058);
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: right;
+    margin-top: 80px;
+  }
+  
+  div.footer-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    display: flex;
+  }
+
+  div.right, .left {
+    flex: 1;
+  }
+
+  div.left {
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+
+    /* Initialisation de l'animation underline on hover */
+    display: inline-block;
+    padding-bottom: 5px;
+    background-image: linear-gradient(#a7a6a7 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s;
+  }
+  
+  footer a:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+  }
+
+  .instagram-link {
+    padding-bottom: 0px;
+  }
+
+  a p {
+    color: #a7a6a7;
+  }
+
+  .instagram-name {
+    width: 175px;
+    line-height: 40px
+  }
+
+  .instagram-logo {
+    width: 40px;
+    float: left;
+  }
+
+  .github-name {
+    width: 90px;
+    line-height: 25px
+  }
+
+  .github-logo {
+    width: 25px;
+    float: left;
+  }
+
+  .license-link {
+    color: #a7a6a7;
+  }
+
+  /*----------------------------------------------*/
+  /*             Mise en page générale            */
+  /*----------------------------------------------*/
+  div.page-content {
+    padding-top: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+  }
+
+  div.page-content div.left, div.page-content div.right {
+    flex: 1;
+    padding: 25px;
+  }
+
+  div.page-content div.left img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  div.page-content div.right ul {
+    padding-left: 40px;
+  }
+
+  div.page-content div.right a {
+    text-decoration: none;
+    color: #418AF7;
+
+    /* Initialisation de l'animation underline on hover */
+    display: inline-block;
+    padding-bottom: 5px;
+    background-image: linear-gradient(#418AF7 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s;
+  }
+  
+  div.page-content div.right a:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+  }
+
+  div.page-content div.right ul li {
+    margin-bottom: 10px;
+  }

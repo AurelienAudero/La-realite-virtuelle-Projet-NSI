@@ -280,6 +280,7 @@
 
   /*----------------------------------------------*/
   /*                 Bouton animé                 */
+  /*           "Découvrir" & "Continuer"          */
   /*----------------------------------------------*/
   .btn:link,
   .btn:visited {
@@ -328,19 +329,19 @@
     width: 60%;
     margin-top: -12.5px;
   }
-  
-  #home img {
-    width: 50%;
-    min-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
 
   /*----------------------------------------------*/
   /*            Image, titre et bouton            */
   /*              en haut de la page              */
   /*----------------------------------------------*/
+  #home img {
+    width: 80vw;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
   #home button {
     font-family: 'Montserrat', sans-serif;
     font-size: 100px;
@@ -351,9 +352,7 @@
 
 
   section {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 80px;
+    padding: 22.5vh 10% 22.5vh 10%;
   }
 
   /*----------------------------------------------*/
@@ -491,6 +490,112 @@
   div.star-rating label input:focus:not(:checked) ~ .icon:last-child {
     color: #000;
     text-shadow: 0 0 5px #ffd700;
+  }
+
+  @media screen and (max-width: 650px) {
+    div.star-rating {
+      font-size: 35px;
+    }
+  }
+
+  /*----------------------------------------------*/
+  /*           Bloc de citation pour la           */
+  /*             définition de la VR              */
+  /*----------------------------------------------*/
+  .what-is-it-container {
+    background: linear-gradient(to left,#7b01f7, #e30058);
+    width: 80vw;
+    max-width: 1000px;
+    margin: -9vh auto 2.5vh auto;
+    padding: 10vh 5vw 12.5vh 5vw;
+    border-radius: 50px;
+  }
+  
+  .quote-container {
+    position: relative;
+    font-weight: 800;
+    color: #fff;
+    padding: 35px 0;
+    width: 100%;
+    max-width: 900px;
+    z-index: 1;
+    margin: 80px auto;
+    align-self: center;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .quote-container h1 {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 1.75em;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0;
+  }
+
+  /* Grands guillemets à droit */
+  .quote-container:after {
+      position: absolute;
+      content: "”";
+      color: rgba(255, 255, 255, 1);
+      font-size: 10rem;
+      line-height: 0;
+      bottom: -43px;
+      right: 30px;
+  }
+
+  /* Sous-titre de citation */
+  .quote-container h4 {
+      position: relative;
+      color: #292a2b;
+      font-size: 1.4rem;
+      font-weight: normal;
+      line-height: 1;
+      margin: 0;
+      padding-top: 20px;
+      z-index: 1;
+  }
+
+  /* Media queries */
+  @media screen and (max-width: 675px) {
+    .quote-container h1 {
+      font-size: 1.5em;
+    }
+
+    .what-is-it-container {
+      margin-top: -7.5vh;
+      padding-top: 2.5vh;
+      padding-bottom: 2.5vh;
+    }
+
+    .quote-container:after {
+      font-size: 7.5rem;
+      bottom: -15px;
+    }
+    
+    .quote-container h4 {
+      font-size: 1rem;
+    }
+
+    .quote-container {
+      border-top: none;
+      border-bottom: none;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .quote-container h1 {
+      font-size: 1.25em;
+    }
+  }
+
+  @media screen and (max-width: 475px) {
+    .quote-container h1 {
+      font-size: 1em;
+    }
   }
 
   /*----------------------------------------------*/

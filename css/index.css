@@ -678,10 +678,11 @@
                 linear-gradient(to left,#7b01f7, #e30058) border-box;
     border: 5px solid transparent;
     border-radius: 15px;
-    width: 50vw;
+    width: 80vw;
+    max-width: 750px;
     margin: 25px auto 0px auto;
   }
-  
+
   table {
     border-spacing: 1;
     border-collapse: collapse;

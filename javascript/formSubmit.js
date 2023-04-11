@@ -1,3 +1,11 @@
+/**!
+ * Form Submit
+ * @author: Aurélien Audero (https://github.com/AurelienAudero)
+ * @author: Tony Baca (https://github.com/Thidokachi)
+ * @url: https://github.com/AurelienAudero/La-realite-virtuelle-Projet-NSI/
+ * @license: https://github.com/AurelienAudero/La-realite-virtuelle-Projet-NSI/blob/main/LICENSE
+ */
+
 // Identifier le formulaire dans une variable
 var form = document.getElementById("feedback-form");
 

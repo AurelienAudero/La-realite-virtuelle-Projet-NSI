@@ -1,3 +1,11 @@
+/**!
+ * Go Back Up Button
+ * @author: Aurélien Audero (https://github.com/AurelienAudero)
+ * @author: Tony Baca (https://github.com/Thidokachi)
+ * @url: https://github.com/AurelienAudero/La-realite-virtuelle-Projet-NSI/
+ * @license: https://github.com/AurelienAudero/La-realite-virtuelle-Projet-NSI/blob/main/LICENSE
+ */
+
 // Récupère l'élément #home-up-arrow
 const homeUpArrow = document.querySelector('#home-up-arrow');
 

@@ -725,6 +725,10 @@
       cursor: pointer
   }
 
+  table th {
+    color: white;
+  }
+
   .column1 {
     padding-left: 40px
   }

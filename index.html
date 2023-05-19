@@ -9,6 +9,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5FF5SXP');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- Sélection du titre, du charset et du viewport -->
     <!-- Meilleure compatibilité avec Internet Explorer -->
     <meta charset="UTF-8">
@@ -37,6 +45,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FF5SXP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Navbar -->
     <header>
         <nav class="navbar">
@@ -58,6 +71,18 @@
             </div>
         </nav>
     </header>
+
+    <div class="cookie-container">
+        <img src="images/Cookie.webp" alt="Image d'un cookie">
+        <div class="cookie-content">
+          <header>Les Cookies</header>
+          <p>Ce site utilise des cookies pour collecter des statistiques anonymes et améliorer votre expérience utilisateur.</p>
+          <div class="cookie-btn">
+            <button class="cookie-item">J'ai compris</button>
+            <a href="#" class="cookie-item">En savoir plus</a>
+          </div>
+        </div>
+      </div>
 
     <!-- Image, titre et bouton du haut de page-->
     <section id="home">
@@ -385,6 +410,7 @@
     <!-- Importation du JavaScript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Importation de jQuery -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Importation de Axios -->
+    <script src="javascript/cookie-consent.js"></script>
     <script src="javascript/smooth-scrolling.js"></script>
     <script src="javascript/formSubmit.js"></script>
     <script src="javascript/goBackUp.js"></script>

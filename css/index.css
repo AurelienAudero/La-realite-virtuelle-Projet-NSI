@@ -732,3 +732,95 @@
   .column1 {
     padding-left: 40px
   }
+
+  /*----------------------------------------------*/
+  /*      Bannière d'acceptation des cookies      */
+  /*----------------------------------------------*/
+  .cookie-container {
+    position: fixed;
+    z-index: 15;
+    bottom: 30px;
+    left: 1.5vw;
+    max-width: 365px;
+    background: #fff;
+    padding: 25px 25px 30px 25px;
+    border-radius: 15px;
+    box-shadow: 1px 7px 14px 5px rgba(0,0,0,0.15);
+    text-align: center;
+  }
+
+  .cookie-container.hide {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+  }
+
+  ::selection {
+    color: #fff;
+    background: #FCBA7F;
+  }
+  
+  .cookie-container img {
+    max-width: 90px;
+  }
+
+  .cookie-content header, .cookie-popup header{
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .cookie-content {
+    margin-top: 10px;
+  }
+
+  .cookie-content p {
+    color: #858585;
+    margin: 5px 0 20px 0;
+  }
+
+  .cookie-content .cookie-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cookie-btn button, .cookie-popup button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #FCBA7F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .cookie-btn button:hover {
+    transform: scale(0.97);
+  }
+
+  .cookie-btn .item {
+    margin: 0 10px;
+  }
+
+  .cookie-btn a {
+    color: #FCBA7F;
+    text-decoration: none;
+  }
+  
+  .cookie-popup {
+    position: fixed;
+    z-index: 16;
+    bottom: 30px;
+    left: 1.5vw;
+    max-width: 365px;
+    background: #fff;
+    padding: 25px 25px 30px 25px;
+    border-radius: 15px;
+    box-shadow: 1px 7px 14px 5px rgba(0,0,0,0.15);
+    text-align: center;
+  }

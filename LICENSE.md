@@ -1,6 +1,6 @@
 # Disclaimer
 
-Last updated: April 11, 2023
+Last updated: January 21, 2024
 
 # Interpretation and Definitions
 
@@ -16,7 +16,7 @@ For the purposes of this Disclaimer:
 - __Copyright Holders__ (referred to as either "The Copyright Holders", "We", "Us" or "Our" in this Disclaimer) refers to Aurélien Audero and Tony Baca.
 - __Service__ refers to the Website.
 - __You__ means the individual accessing the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
-- __Website__ refers to the website called "La réalité virtuelle", accessible from [https://github.com/AurelienAudero/La-realite-virtuelle-Projet-NSI/](https://github.com/AurelienAudero/La-realite-virtuelle-Projet-NSI/)
+- __Website__ refers to the website called "La réalité virtuelle", accessible from [https://aurelienaudero.github.io/La-realite-virtuelle-Projet-NSI/](https://aurelienaudero.github.io/La-realite-virtuelle-Projet-NSI/)
 
 # Disclaimer
 

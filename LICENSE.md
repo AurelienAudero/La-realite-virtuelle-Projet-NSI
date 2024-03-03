@@ -1,6 +1,6 @@
 # Disclaimer
 
-Last updated: January 21, 2024
+Last updated: March 3, 2024
 
 # Interpretation and Definitions
 
@@ -69,7 +69,4 @@ The Copyright Holders will not be liable to You or anyone else for any decision 
 # Contact Us
 
 If you have any questions about this Disclaimer, You can contact Us:
-
-
-
-- By sending a direct message on LinkedIn at: [https://www.linkedin.com/in/aurélien-audero-3a06061bb/](https://www.linkedin.com/in/aurélien-audero-3a06061bb/)
+- By sending an email at: havoc.aure@outlook.fr
